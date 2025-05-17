@@ -1,0 +1,106 @@
+/*Estilo general para contenedores*/
+ div[data-testid="stAppViewBlockContainer"] div[data-testid="stVerticalBlockBorderWrapper"] div[data-testid="stVerticalBlockBorderWrapper"],
+ div[data-testid="stVerticalBlockBorderWrapper"] div[data-testid="stHorizontalBlock"] div[data-testid="column"] div[data-testid="stVerticalBlockBorderWrapper"]  {
+    background-color:white;
+    padding:5px;
+    border-radius:15px;        
+    /* border: silver solid 2px; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Color etiquetas y títulos*/
+h3,
+label[data-testid="stMetricLabel"] p{  
+    font-weight:bold;
+    color:#1ea47e
+}
+
+/* Estilo de valor de métricas*/
+div[data-testid="stMetricValue"]{
+    font-size:2.5em;
+    font-weight:bold;
+    color: black;
+}
+
+/*Estilos para tablas*/
+
+.dashboardTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;    
+    width:100%
+}
+.dashboardTable thead tr {
+    background-color: #f4f4f9;
+    color: #12bb94;
+    text-align: left;
+}
+.dashboardTable th,
+.dashboardTable td {
+    /* padding: 5px 5px; */
+    border:none;
+}
+
+.dashboardTable tbody tr {
+    border-bottom: 1px solid #ecedff;
+    background-color:white;
+}
+
+.dashboardTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.stColumn:has(.stMetric){
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+
+
+
+div[class*='st-key-chart']
+{
+    /* border: 1px solid grey; */
+    overflow:hidden;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.stColumn:has(.stMetric) {
+    overflow:hidden;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid grey; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.st-key-container-filtros,
+.st-key-container-rango,
+.stColumn:has(.stDataFrame){    
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 1% 10px 10px 10px;    
+    /* border: 1px solid grey; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+div[class*='st-key-container-texto']
+{
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    padding: 1% 10px 10px 10px;    
+    /* border: 1px solid grey; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.06);
+    /* border: 5px solid yellow; */
+    font-weight: bold;
+    text-align: center;
+}
